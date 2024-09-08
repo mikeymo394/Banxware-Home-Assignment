@@ -1,0 +1,13 @@
+dbt_banxware_assignment:
+  outputs:
+    dev:
+      type: snowflake
+      threads: 4
+      account: qn98383.europe-west4.gcp
+      database: home_assignment
+      user: quamane
+      password: Lifeisgood2@
+      schema: RAW
+      warehouse: COMPUTE_WH
+      role: ACCOUNTADMIN
+  target: dev

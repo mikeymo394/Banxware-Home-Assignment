@@ -1,9 +1,8 @@
-
 1. **SETTING UP ENVIRONMENT**
 
-This procedure outlines the steps to complete the given home assignment. As the first step of setting up the environment was already given. A ‘[www.snowflake.com](http://www.snowflake.com)’ account with username was created.  A database named ‘home_assignment’ was also created on the Snowflake account.
+This procedure outlines the steps to complete the given home assignment. As the first step of setting up the environment was already given. A ‘[www.snowflake.com](http://www.snowflake.com)’ account with username ‘quamane’ was created.  A database named ‘home_assignment’ was also created on the Snowflake account.
 
-Open a command prompt. Go to Search in Start menu and find Command Prompt.
+Continuing with the assignment, first, open a command prompt. Go to Search in Start menu and find Command Prompt.
 
 Once the Command Prompt is opened, type _‘pip install dbt-snowflake’_ to install _dbt_ (Data Built Tool) and Press Enter.
 
@@ -21,15 +20,15 @@ _type: snowflake_
 
 _threads: 4_
 
-_account: <your_snowflake_account_details>_
+_account: qn98383.europe-west4.gcp –Obtained from Snowflake system_
 
-_database: <snowflake_database_name>_  -in this project was 'home_assignment'.
+_database: home_assignment_
 
-_user: <login-name>_
+_user: quamane_
 
-_password: <yourpassword>_
+_password:: Lifeisgood2@_
 
-_schema: <your_snowflake_schema_name>_
+_schema: HA –Created on Snowflake system_
 
 _warehouse: COMPUTE_WH –Obtained from Snowflake system_
 
@@ -37,7 +36,7 @@ _role: ACCOUNTADMIN –Obtained from Snowflake system_
 
 _target: dev_
 
-Using the _‘cd’_ command, navigate to the _'dbt_banxware_assignment'_ folder and test the connection using the command _‘dbt debug’._ Output is shown below with a successful connection and _‘All Check Passed!’_ prompt.
+Using the _‘cd’_ command, navigate to the dbt_banxware_assignment folder and test the connection using the command _‘dbt debug’._ Output is shown below with a successful connection and _‘All Check Passed!’_ prompt.
 
 **2\. DATA INGESTION**
 
@@ -123,7 +122,7 @@ Run the model with the Command Prompt _‘dbt run’._
 
 **4\. DATA ANALYSIS**
 
-In answering the questions in the given task, the following sql scripts was saved in a _queries_ folder in the _dbt_banxware_assignment_ folder.
+In answering the questions in the given task, the following sql scripts was saved in a queries folder in the dbt_banxware_assignment.
 
 **_Question 1: Top 5 Products by Total Sales Amount in 2023_**
 
